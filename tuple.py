@@ -111,6 +111,7 @@
 # i in res:
 #     res[0],res[-1]==res[-1],res[0]
 #     print(res)
-
-
-print("hello")
+from user_define_module import check_odd_even
+print(check_odd_even(19))
+from user_define_module import rev_str
+print(rev_str("aman"))
