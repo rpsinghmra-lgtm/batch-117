@@ -17,7 +17,7 @@ try:
     my_table=input("enter table name")
     ravi.execute(f"create table {my_table} (rating int,comment text,reviewerName text,reviewerEmail text)")
     print("table created successfully")
-    with open("product.json3","r") as f:
+    with open("product.json3","r") as f: 
         data=json.load(f)
         ravi.execute(f"""INSERT INTO {my_table} VALUES (
                            {data["rating"]},
